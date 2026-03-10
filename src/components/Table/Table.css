@@ -1,21 +1,83 @@
 .table {
-  margin-top: 20px;
-  overflow: scroll;
-  color: #6a5d5d;
-  background-color: white;
-  height: 400px;
+  overflow-y: auto;
+  color: var(--color-text);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  height: 300px;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table thead .table__rankHeader {
+  width: 40px;
+  text-align: right;
+}
+
+.table thead .table__metricHeader {
+  text-align: right;
 }
 
 .table tr {
-  display: flex;
-  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border-soft);
 }
 
 .table td {
-  padding: 0.5rem;
+  padding: 0.56rem 0.75rem;
   border: none;
+  font-family: var(--font-data);
+  color: var(--color-text-muted);
+  font-size: 0.86rem;
 }
 
-.table tr:nth-of-type(odd) {
-  background-color: #f3f2f8;
+.table__rank {
+  width: 40px;
+  text-align: right;
+  color: var(--color-text-dim);
+}
+
+.table__countryCell {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.table__flag {
+  width: 18px;
+  height: 12px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid var(--color-border);
+}
+
+.table__metricValue {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.table__empty {
+  text-align: center;
+  color: var(--color-text-dim);
+  padding: 1rem 0.75rem;
+}
+
+.table tr:hover {
+  background: rgba(41, 121, 255, 0.08);
 }

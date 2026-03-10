@@ -1,0 +1,44 @@
+:root {
+  --font-heading: "Syne", "Trebuchet MS", sans-serif;
+  --font-body: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-data: "Space Grotesk", "Segoe UI", sans-serif;
+
+  --color-bg: #0a0e1a;
+  --color-bg-elevated: #0f1627;
+  --color-surface: #111827;
+  --color-surface-raised: #182338;
+  --color-border: #22324b;
+  --color-border-soft: #1a2740;
+
+  --color-text: #e8edf5;
+  --color-text-muted: #9aacc8;
+  --color-text-dim: #7287a9;
+
+  --color-cases: #d7263d;
+  --color-recovered: #2a9d5b;
+  --color-deaths: #2f3640;
+  --color-vaccinations: #1f6feb;
+  --color-highlight: #3fb4ff;
+  --color-error: #ff4560;
+  --color-error-soft: rgba(255, 69, 96, 0.16);
+  --color-info: #2979ff;
+  --color-info-soft: rgba(41, 121, 255, 0.15);
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --space-1: 0.4rem;
+  --space-2: 0.7rem;
+  --space-3: 1rem;
+  --space-4: 1.4rem;
+  --space-5: 1.8rem;
+
+  --shadow-panel: 0 16px 40px rgba(0, 0, 0, 0.42);
+  --shadow-glow: 0 0 30px rgba(63, 180, 255, 0.2);
+
+  --gradient-app:
+    radial-gradient(circle at 15% -10%, rgba(41, 121, 255, 0.22), transparent 32%),
+    radial-gradient(circle at 88% -12%, rgba(255, 69, 96, 0.18), transparent 28%),
+    linear-gradient(180deg, #090d18 0%, #0a0e1a 45%, #080c16 100%);
+}
